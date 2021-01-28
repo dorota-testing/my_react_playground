@@ -1,11 +1,14 @@
+import React from 'react';
+import './Footer.css';
+
 function Footer() {
-    return (
-      <footer className="footer mt-auto py-3">
+  return (
+      <footer>
       <div className="container">
-        <span>Place sticky footer content here.</span>
+        Copyright &copy;  {(new Date().getFullYear())} Let&apos;s Recycle All Rights Reserved
       </div>
     </footer>
-    );
+  );
 }
 
 export default Footer;

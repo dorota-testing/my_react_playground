@@ -1,6 +1,77 @@
-.App {
-  background-color: rgb(230, 250, 219);
+:root {
+  /* global css colours */
+  --ao-color: #12c35a;
+  --alt-color: #d7226a;
+  --theme-color: var(--ao-color);
+  --theme-header-color: var(--ao-color);
+  --theme-background-color: #f5eddd;
+  --theme-button-color: #12c35a;
+  --theme-text-color: #1b9dde;
 }
-main .container {
-  background-color: #ffffff;
+
+body {
+  background-color: var(--theme-background-color);
+}
+
+/* Flexbox */
+.container, .admin-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.main-column, .side-column {
+  flex-basis : 0;
+  padding: 15px;
+}
+.admin-container .side-column {
+  border:0;
+  padding: 0;
+}
+.v-align-top {
+  vertical-align: top;
+}
+
+/* Media queries */
+@media (max-width: 600px){
+  .container, .admin-container {
+    flex-direction: column;
+    max-width:400px;
+    margin: 0 auto;
+  }
+  .mobile-hidden {
+    display: none;
+  }
+}
+@media (min-width: 600px) and (max-width: 800px){
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .admin-container {
+    max-width: 100%;
+    margin: 0 auto;
+  }  
+  .main-column {
+    flex-grow: 2;
+  }
+  .side-column {
+    flex-grow: 1;
+  }  
+}
+@media (min-width: 801px) {
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+  } 
+  .main-column {
+    flex-grow: 3;
+  }
+  .side-column {
+    flex-grow: 1;
+  } 
+}
+@media (min-width: 601px) {
+  .mobile-visible {
+    display: none;
+  } 
 }

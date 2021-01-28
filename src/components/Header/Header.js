@@ -1,36 +1,28 @@
+import React from 'react';
 import './Header.css';
-import {
-  BrowserRouter as Router,
-  NavLink
-} from "react-router-dom";
+import { Link, NavLink } from 'react-router-dom';
+
 function Header() {
-    return (
-  
+  return (
         <header>
-        <nav className="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
+        <nav className="navbar">
           <div className="container">
-          <a className="navbar-brand" href="/">Let's Recycle</a>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse " id="navbarCollapse">
-            <ul className="navbar-nav ml-auto ">
+            <Link to="/" >&#9851; <span>Let&apos;s Recycle</span></Link>
+            <ul className="navbar-nav">
               <li className="nav-item">
-                <NavLink to="/" activeClassName="active">Home</NavLink>
+                <NavLink exact to="/" activeClassName="active">Home</NavLink>
               </li>
               <li className="nav-item">
                 <NavLink to="/about" activeClassName="active">About</NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/map" activeClassName="active">Map</NavLink>
+                <NavLink to="/manage-collection" activeClassName="active">Manage Collection</NavLink>
               </li>
             </ul>
           </div>
-          </div>
-    
         </nav>
       </header>
-    );
+  );
 }
 
 export default Header;
