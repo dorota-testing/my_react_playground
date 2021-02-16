@@ -16,10 +16,6 @@ import PageContentLanding from './components/PageContentLanding/PageContentLandi
 import PageAbout from './components/PageAbout/PageAbout.js';
 import PageManageCollection from './components/PageManageCollection/PageManageCollection.js';
 import AdminDriversList from './components/AdminDriversList/AdminDriversList.js';
-//import AdminDepotMap from './components/AdminDepotMap/AdminDepotMap.js';
-//import AdminData from './components/AdminData/AdminData.js';
-//import AdminPostCode from './components/AdminPostCode/AdminPostCode.js';
-
 
 function App() {
   return (
@@ -56,48 +52,7 @@ function App() {
             <div className="admin-container">
               <AdminSidebar />
               <div className="main-column">
-                {/* <AdminData /> */}
-              </div>
-            </div>
-            <Footer />
-          </Route>
-          <Route path="/admin/drivers-list">
-            <AdminHeader />
-            <div className="admin-container">
-              <AdminSidebar />
-              <div className="main-column">
-                < AdminDriversList />
-              </div>
-            </div>
-            <Footer />
-          </Route>
-          <Route path="/admin/map">
-            <AdminHeader />
-            <div className="admin-container">
-              <AdminSidebar />
-              <div className="main-column">
-                {/* < AdminDepotMap /> */}
-              </div>
-            </div>
-            <Footer />
-          </Route>
-
-          <Route path="/admin/postcode">
-            <AdminHeader />
-            <div className="admin-container">
-              <AdminSidebar />
-              <div className="main-column">
-                {/* < AdminPostCode /> */}
-              </div>
-            </div>
-            <Footer />
-          </Route>
-          <Route path="/admin/counter">
-            <AdminHeader />
-            <div className="admin-container">
-              <AdminSidebar />
-              <div className="main-column">
-                {/* < AdminCounter/> */}
+              < AdminDriversList />
               </div>
             </div>
             <Footer />

@@ -1,11 +1,11 @@
 :root {
   /* global css colours */
-  --ao-color: #12c35a;
+  --ao-color: #129ac3;
   --alt-color: #d7226a;
   --theme-color: var(--ao-color);
   --theme-header-color: var(--ao-color);
-  --theme-background-color: #f5eddd;
-  --theme-button-color: #12c35a;
+  --theme-background-color: #e8ecdc;
+  --theme-button-color: #1256c3;
   --theme-text-color: #1b9dde;
 }
 
